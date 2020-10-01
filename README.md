@@ -22,7 +22,12 @@ Then set your message text and what attributes to choose as your MMS or SMS numb
 
 ### Installation
 
-Download the zip from the [releases](https://github.com/adamzammit/sendTwilioMessages/releases) page and extract to your plugins folder. You can also clone directly from git: go to your plugins directory and type
+Download the zip from the [releases](https://github.com/adamzammit/sendTwilioMessages/releases) page and extract to your plugins folder. 
+
+You will also need to download the zip of https://github.com/twilio/twilio-php/archive/6.10.4.zip and extract as the twilio-php folder within the plugin folder.
+
+
+You can also clone directly from git: go to your plugins directory and type: (this will include the twilio-php code in one hit)
 ```
 git clone --recurse-submodules https://github.com/adamzammit/sendTwilioMessages.git sendTwilioMessages
 ```
