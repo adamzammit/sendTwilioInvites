@@ -24,7 +24,7 @@ Then set your message text and what attributes to choose as your MMS or SMS numb
 
 Download the zip from the [releases](https://github.com/adamzammit/sendTwilioMessages/releases) page and extract to your plugins folder. You can also clone directly from git: go to your plugins directory and type
 ```
-git clone https://github.com/adamzammit/sendTwilioMessages.git sendTwilioMessages
+git clone --recurse-submodules https://github.com/adamzammit/sendTwilioMessages.git sendTwilioMessages
 ```
 
 ## License
