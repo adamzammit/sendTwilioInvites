@@ -4,10 +4,10 @@
         <name>sendTwilioMessages</name>
         <type>plugin</type>
         <creationDate>2016-09-19</creationDate>
-        <last_update>2020-10-01</last_update>
+        <last_update>2021-03-11</last_update>
         <author>Stefan Verweij - MZeit and Ricardo Andrade and Adam Zammit</author>
         <authorUrl>https://github.com/adamzammit/SendTwilioMessages</authorUrl>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <license>MIT</license>
         <description><![CDATA[A LimeSurvey plugin to send invitations and reminders to participants using the Twilio API (both SMS and MMS) ]]></description>
     </metadata>

@@ -175,7 +175,7 @@ class sendTwilioMessages extends \LimeSurvey\PluginManager\PluginBase
 
 
             if($smsattribute > 0) {
-                $message = $this->get('SMS' . $mtype . 'Text');
+                $message = $this->get('SMS' . $mtype . 'Text','survey',$iSurveyId);
                 $attrib = "attribute_" . $smsattribute;
                 $to = $oToken->$attrib;
 
@@ -191,7 +191,7 @@ class sendTwilioMessages extends \LimeSurvey\PluginManager\PluginBase
 
             if($mmsattribute > 0) {
 
-                $message = $this->get('MMS' . $mtype . 'Text');
+                $message = $this->get('MMS' . $mtype . 'Text','survey',$iSurveyId);
                 $attrib = "attribute_" . $mmsattribute;
                 $to = $oToken->$attrib;
 
@@ -199,7 +199,7 @@ class sendTwilioMessages extends \LimeSurvey\PluginManager\PluginBase
 
                     $smessage = Replacefields($message, $fieldsarray);
 
-                    $this->callTwilio($to,$smessage,$this->get('MMS' . $mtype . 'Image'));
+                    $this->callTwilio($to,$smessage,$this->get('MMS' . $mtype . 'Image','survey',$iSurveyId));
                 }
 
 
